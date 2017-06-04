@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rendering View</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Rendering Views(Rebuilding Rails)</h1>
+		<p>2017/6/5 Spring@新手村讀書會</p>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Rendering View</h2>
+                <p>2017/6/5 Spring@新手村讀書會</p>
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
+		<style>
+			#cover h2 {
+				margin:10px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+                                position: absolute;
+                                bottom: 0;
+				color:#FFF;
+				font-size:16px;
+                                font-family: "Noto Sans", sans-serif;
+				}
+		</style>
+
+	</section>
+
+	<section class="slide">
+		<h2>Previously on Rebuilding Rails</h2>
+		<ol>
+			<li>Rack, Route, Build a mini Rails</li>
+			<li>Controller</li>
+			<li>Auto Reload</li>
+			<li>Rendering View (We are here !!!)</li>
+			<li>Models</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Introduction</h2>
+		<ul>
+                  <li>Erubis</li>
+                  <li>Our Rulers</li>
+                  <li>Discussion</li>
+		</ul>
+		<p class="note"><a href="https://www.slideshare.net/LoStan/template-rendering-in-rails">Template Rendering in Rails</a></p>
+	</section>
+
+	<section class="slide">
+          <h2><a href="http://www.kuwata-lab.com/erubis/">Erubis</a></h2>
+		<ul>
+                  <li>Erubis is a fast, secure, and very extensible implementation of eRuby.</li>
+                  <li><code>erubis_test.rb</code> </li>
+                </ul>
+	</section>
+
+	<section class="slide">
+		<h2>Rulers</h2>
+		<ul>
+                  <li> Rulers
+                    <ul>
+                      <li>Render Method in Controller</li>
+                      <li>Find the template</li>
+                    </ul>
+                  </li>
+                  <li class='next'> Use Rulers in our app
+                    <ul>
+                      <li>Add the template</li>
+                      <li>Follow the convention</li>
+                      <li>Use the render method</li>
+                    </ul>
+                  </li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Discussion</h2>
+		<ul>
+                  <li>Rulers and Rails
+                    <ul>
+                      <li>multiple template engine</li>
+                      <li>render partial </li>
+                    </ul>
+                  </li>
+                  <li class='next'><a href="https://github.com/rails/rails/commit/7da8d76206271bdf200ea201f7e5a49afb9bc9e7#diff-dfb6e0314ad9639bab460ea64871aa47R22">Change ActionView ERB Handler from Erubis to Erubi</a></li>
+                  <li class='next'><a href="https://github.com/rails/rails/blob/master/actionpack/lib/abstract_controller/rendering.rb#L67">Instance variable in controller and view</a></li>
+                </ul>
+	</section>
+
+	<section class="slide" id="picture">
+		<h2>Thank You~</h2>
+		<figure>
+			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
+		<style>
+			#picture h2 {
+				color:#FFF;
+				}
+		</style>
+	</section>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
